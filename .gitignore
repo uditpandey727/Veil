@@ -1,0 +1,101 @@
+# ═══════════════════════════════════════════════════════════
+# VEIL — .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# ── NEVER COMMIT THESE (security critical) ──────────────────
+
+# Firebase config — contains your project ID, API keys, database URL
+# Anyone with this file can read/write your Firebase database
+google-services.json
+
+# Local signing keystore — your app signing key
+*.jks
+*.keystore
+keystore.properties
+release.keystore
+debug.keystore
+
+
+# Local secrets file (if you create one for API keys etc.)
+secrets.properties
+local.secrets
+local.properties
+
+
+# ── Android Studio / IntelliJ ────────────────────────────────
+
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+
+# ── Build outputs ────────────────────────────────────────────
+
+build/
+app/build/
+*/build/
+out/
+
+# ── Gradle ───────────────────────────────────────────────────
+
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+local.properties          # contains your SDK path — machine specific
+
+# ── OS files ─────────────────────────────────────────────────
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Logs & temp ──────────────────────────────────────────────
+
+*.log
+*.tmp
+*.temp
+captures/
+
+# ── Test reports ─────────────────────────────────────────────
+
+app/src/test/
+app/src/androidTest/
+
+
+# ── ProGuard mapping (optional — keep if you want crash reports) ──
+# app/build/outputs/mapping/
+
+# ═══════════════════════════════════════════════════════════
+# WHAT YOU SHOULD COMMIT (for open source)
+# ═══════════════════════════════════════════════════════════
+#
+# ✅ All .kt source files
+# ✅ All .xml resource files
+# ✅ AndroidManifest.xml
+# ✅ build.gradle files
+# ✅ gradle-wrapper files
+# ✅ README.md
+# ✅ docs/ folder (firebase-rules-fixed.json etc.)
+# ✅ google-services.json.example (template with fake values)
+#
+# ❌ google-services.json       (your real Firebase config)
+# ❌ *.jks / *.keystore         (your signing keys)
+# ❌ local.properties           (your SDK path)
+# ❌ .idea/                     (IDE settings)
+# ❌ build/                     (compiled output)
+# ═══════════════════════════════════════════════════════════
