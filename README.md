@@ -177,7 +177,7 @@ app/src/main/java/com/veil/
 
 You can download the latest APK from the [Releases Page](https://github.com/uditpandey727/veil/releases/latest).
 
-Direct link: [Download APK](https://github.com/uditpandey727/veil/releases/latest/download/app-debug.apk)
+Direct link: [Download APK](https://github.com/uditpandey727/veil/releases/latest/download/App/app-debug.apk)
 
 ### Build from source (recommended)
 
